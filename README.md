@@ -45,6 +45,7 @@ modelscope download --model BAAI/bge-small-zh-v1.5 --local_dir models/bge-small-
 # 放到 models/ 目录下
 ```
 
+
 ### 4. 准备教材文档
 
 将高中地理教材 PDF 或 DOCX 文件放入 `data/documents/` 目录。系统支持一次上传多个文件。
