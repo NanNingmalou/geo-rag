@@ -1,0 +1,44 @@
+# ============================================================
+# RAG 地理知识问答系统 — 依赖清单
+# 环境: Python 3.10 | CUDA 12.4 | geo-rag (conda)
+# 安装: conda activate geo-rag && pip install -r requirements.txt
+# ============================================================
+
+# --- RAG 框架 ---
+llama-index-core==0.14.21
+llama-index-readers-file==0.6.0
+
+# --- 向量库 ---
+faiss-cpu==1.13.2
+
+# --- Embedding 模型（BGE-small-zh-v1.5）---
+sentence-transformers==5.4.1
+torch==2.11.0
+transformers==5.8.0
+
+# --- LLM 推理（Qwen2.5-7B GGUF）---
+# llama-cpp-python 需从特定 wheel 源安装以启用 CUDA 加速:
+# pip install llama-cpp-python==0.3.22 --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cu124
+llama-cpp-python==0.3.22
+
+# --- DeepSeek API (OpenAI 兼容) ---
+openai==1.109.1
+
+# --- Web UI ---
+streamlit==1.57.0
+
+# --- 文档解析 ---
+python-docx==1.2.0
+pypdf==6.11.0
+docx2txt==0.9
+
+# --- 可视化 ---
+plotly>=5.9.0
+kaleido>=0.2.1
+
+# --- 数据处理 ---
+numpy==2.2.6
+pandas==2.3.3
+
+# --- 离线支持 ---
+huggingface_hub==1.14.0

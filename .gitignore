@@ -1,0 +1,29 @@
+# IDE
+.idea/
+.vscode/
+
+# Claude Code local config
+.claude/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Models (too large, download separately)
+models/
+
+# Data - generated/cached (keep only knowledge_taxonomy.json)
+data/index.faiss
+data/index_meta.json
+data/nodes.json
+data/stats.db
+data/documents/
+data/natural_earth/
+
+# Reference papers & outputs
+paper/
+paper_output/
+
+# Word temp files
+~$*.docx
